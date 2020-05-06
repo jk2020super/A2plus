@@ -17,8 +17,7 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <!--string>A2plus settings</string-->
-   <string>A2plus 设置</string>
+   <string>A2plus settings</string>
   </property>
   <widget class="QGroupBox" name="groupBox_4">
    <property name="geometry">
@@ -36,8 +35,7 @@
     </sizepolicy>
    </property>
    <property name="title">
-    <!--string>User interface settings</string-->
-    <string>用户界面设置</string>
+    <string>User interface settings</string>
    </property>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
@@ -52,14 +50,10 @@
      <item row="0" column="0">
       <widget class="Gui::PrefCheckBox" name="checkBox_6">
        <property name="toolTip">
-        <!--string>Adds a creation button for every constraint type to the toolbar</string-->
-	<string>将每个约束类型的创建按钮添加到工具栏</string>
+        <string>Adds a creation button for every constraint type to the toolbar</string>
        </property>
        <property name="text">
-	       <!-->
         <string>Show constraints in toolbar</string>
-	       <-->
-	<string>在工具栏中显示约束</string>
        </property>
        <property name="checked">
         <bool>true</bool>
@@ -75,10 +69,7 @@
      <item row="1" column="0">
       <widget class="Gui::PrefCheckBox" name="checkBox_10">
        <property name="text">
-	       <!--
         <string>Use native file manager of your OS</string>
-	       -->
-	<string>使用操作系统的本机文件管理器</string>
        </property>
        <property name="checked">
         <bool>true</bool>
@@ -113,10 +104,7 @@
     <string/>
    </property>
    <property name="title">
-	   <!-->
     <string>Behavior when updating imported parts</string>
-	   <-->
-    <string>更新导入零件时的行为</string>
    </property>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
@@ -131,17 +119,11 @@
      <item row="0" column="0">
       <widget class="Gui::PrefCheckBox" name="checkBox_4">
        <property name="toolTip">
-	       <!--
         <string>All parts of the assembly will be opened in FreeCAD to be
 reconstructed using values from spreadsheets</string>
-	       -->
-	<string>组件的所有部分都将在FreeCAD中打开，以便使用电子表格中的值进行重建</string>
        </property>
        <property name="text">
-	       <!--
         <string>Recalculate imported parts before updating them (experimental)</string>
-	       -->
-	<string>在更新导入的零件之前重新计算它们（实验性的）</string>
        </property>
        <property name="prefEntry" stdset="0">
         <cstring>recalculateImportedParts</cstring>
@@ -154,17 +136,11 @@ reconstructed using values from spreadsheets</string>
      <item row="1" column="0">
       <widget class="Gui::PrefCheckBox" name="checkBox_5">
        <property name="toolTip">
-	       <!--
         <string>Opens all subassemblies recursively
 to update them</string>
-	       -->
-	<string>递归打开所有部件以更新它们</string>
        </property>
        <property name="text">
-	       <!--
         <string>Enable recursive update of imported parts</string>
-	       -->
-	<string>启用导入部件的递归更新</string>
        </property>
        <property name="prefEntry" stdset="0">
         <cstring>enableRecursiveUpdate</cstring>
@@ -177,19 +153,13 @@ to update them</string>
      <item row="2" column="0">
       <widget class="Gui::PrefCheckBox" name="checkBox_2">
        <property name="toolTip">
-	       <!--
         <string>While importing parts to the assembly, the topological names
 are written into &quot;mux Info&quot; property. When the parts are
 later updated the properties &quot;Sub Elementx&quot; of the constraints
 will be updated according to the &quot;mux Info&quot; topology.</string>
-	       -->
-	<string>将零件导入部件时，拓扑名称将写入&quot；mux Info&quot；属性。稍后更新零件时，将根据&quot；mux Info&quot；拓扑更新约束的属性&quot；Sub Elementx&quot。</string>
        </property>
        <property name="text">
-	       <!--
         <string>Use experimental topological naming</string>
-	       -->
-	<string>使用实验拓扑命名</string>
        </property>
        <property name="prefEntry" stdset="0">
         <cstring>useTopoNaming</cstring>
@@ -202,17 +172,11 @@ will be updated according to the &quot;mux Info&quot; topology.</string>
      <item row="3" column="0">
       <widget class="Gui::PrefCheckBox" name="checkBox_7">
        <property name="toolTip">
-	       <!--
         <string>Use color and transparency settings
 from imported parts</string>
-	       -->
-	<string>使用导入零件的颜色和透明度设置</string>
        </property>
        <property name="text">
-	       <!--
         <string>Inherit per face transparency from parts and subassemblies (experimental)</string>
-	       -->
-	<string>从零件和部件继承每面透明度（实验性）</string>
        </property>
        <property name="prefEntry" stdset="0">
         <cstring>usePerFaceTransparency</cstring>
@@ -225,25 +189,16 @@ from imported parts</string>
      <item row="4" column="0">
       <widget class="Gui::PrefCheckBox" name="checkBox_8">
        <property name="toolTip">
-	       <!--
         <string>Invisible datum/construction shapes will be hidden.
 Note: No constraints must be connected to
 datum/construction shapes in higher or other
 subassemblies. Otherwise you can break the assembly.</string>
-	       -->
-	<string>不可见的基准/构造形状将被隐藏。注意：不能将约束连接到更高或其他部件中的基准/构造形状。否则您可以打断程序集。</string>
        </property>
        <property name="statusTip">
-	       <!--
         <string>All imported parts will directly be put together as union.</string>
-	       -->
-	<string>所有进口零件将直接组装为一个整体。</string>
        </property>
        <property name="text">
-	       <!--
         <string>Do not import invisible shapes (for expert users)</string>
-	       -->
-	<string>不导入不可见形状（对于专家用户）</string>
        </property>
        <property name="prefEntry" stdset="0">
         <cstring>doNotImportInvisibleShapes</cstring>
@@ -256,10 +211,7 @@ subassemblies. Otherwise you can break the assembly.</string>
      <item row="5" column="0">
       <widget class="Gui::PrefCheckBox" name="checkBox_9">
        <property name="text">
-	       <!--
         <string>Use solid union for importing parts and subassemblies (experimental)</string>
-	       -->
-	<string>使用实体并集导入零件和部件（实验）</string>
        </property>
        <property name="prefEntry" stdset="0">
         <cstring>useSolidUnion</cstring>
@@ -288,10 +240,7 @@ subassemblies. Otherwise you can break the assembly.</string>
     </sizepolicy>
    </property>
    <property name="title">
-	   <!--
     <string>Storage of files</string>
-	   -->
-    <string>文件的存储</string>
    </property>
    <widget class="QWidget" name="verticalLayoutWidget_5">
     <property name="geometry">
@@ -306,10 +255,7 @@ subassemblies. Otherwise you can break the assembly.</string>
      <item>
       <widget class="Gui::PrefRadioButton" name="radioButton_3">
        <property name="text">
-	       <!--
         <string>Use relative paths for imported parts</string>
-	       -->
-	<string>对导入的零件使用相对路径</string>
        </property>
        <property name="checked">
         <bool>true</bool>
@@ -325,10 +271,7 @@ subassemblies. Otherwise you can break the assembly.</string>
      <item>
       <widget class="Gui::PrefRadioButton" name="radioButton_4">
        <property name="text">
-	       <!--
         <string>Use absolute paths for imported parts</string>
-	       -->
-	<string>对导入的零件使用绝对路径</string>
        </property>
        <property name="prefEntry" stdset="0">
         <cstring>useAbsolutePathes</cstring>
@@ -341,16 +284,10 @@ subassemblies. Otherwise you can break the assembly.</string>
      <item>
       <widget class="Gui::PrefRadioButton" name="radioButton_5">
        <property name="toolTip">
-	       <!--
         <string>Specify the project folder in the field below</string>
-	       -->
-	<string>在下面的字段中指定项目文件夹</string>
        </property>
        <property name="text">
-	       <!--
         <string>All files are in this project folder:</string>
-	       -->
-	<string>所有文件都在此项目文件夹中：</string>
        </property>
        <property name="prefEntry" stdset="0">
         <cstring>useProjectFolder</cstring>
@@ -417,10 +354,7 @@ subassemblies. Otherwise you can break the assembly.</string>
     </sizepolicy>
    </property>
    <property name="title">
-	   <!--
     <string>Default solver behavior</string>
-	   -->
-    <string>默认解算器行为</string>
    </property>
    <widget class="Gui::PrefCheckBox" name="checkBox">
     <property name="geometry">
@@ -432,10 +366,7 @@ subassemblies. Otherwise you can break the assembly.</string>
      </rect>
     </property>
     <property name="text">
-	    <!--
      <string>Solve automatically if a constraint property is changed</string>
-	    -->
-     <string>如果更改了约束属性，则自动求解</string>
     </property>
     <property name="checked">
      <bool>true</bool>
@@ -464,10 +395,7 @@ subassemblies. Otherwise you can break the assembly.</string>
     </sizepolicy>
    </property>
    <property name="title">
-	   <!--
     <string>Default solving method</string>
-	   -->
-    <string>默认解决方法</string>
    </property>
    <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
@@ -482,19 +410,13 @@ subassemblies. Otherwise you can break the assembly.</string>
      <item row="0" column="0">
       <widget class="Gui::PrefRadioButton" name="radioButton">
        <property name="toolTip">
-	       <!--
         <string>Solver begins with a fixed part and a part constrained to it.
 All other parts are not calculated. If a solution could be
 found, the next constrained part is added for the
 calculation and so on.</string>
-	       -->
-	<string>解算器从一个固定的部分和一个受其约束的部分开始。所有其他部分都不计算。如果可以找到解决方案，则添加下一个受约束的零件进行计算，依此类推。</string>
        </property>
        <property name="text">
-	       <!--
         <string>Use solving of partial systems (recommended for static assemblies)</string>
-	       -->
-	<string>局部系统的使用求解（推荐用于静态装配）</string>
        </property>
        <property name="checked">
         <bool>true</bool>
@@ -510,17 +432,11 @@ calculation and so on.</string>
      <item row="1" column="0">
       <widget class="Gui::PrefRadioButton" name="radioButton_2">
        <property name="toolTip">
-	       <!--
         <string>Solver tries to move all parts at once
 in direction to a fixed part</string>
-	       -->
-	<string>解算器尝试一次将所有零件朝固定零件的方向移动</string>
        </property>
        <property name="text">
-	       <!--
         <string>Use &quot;magnetic&quot; solver, solving all parts at once (for dynamical assemblies)</string>
-	       -->
-	<string>使用磁力求解器，一次求解所有零件（用于动态装配）</string>
        </property>
        <property name="prefEntry" stdset="0">
         <cstring>useMagneticSolver</cstring>
@@ -533,17 +449,11 @@ in direction to a fixed part</string>
      <item row="2" column="0">
       <widget class="Gui::PrefCheckBox" name="checkBox_3">
        <property name="toolTip">
-	       <!--
         <string>All parts will be fixed to the positions
 where they were created</string>
-	       -->
-	<string>所有零件都将固定在创建位置</string>
        </property>
        <property name="text">
-	       <!--
         <string>Force fixed position to all imports</string>
-	       -->
-	<string>对所有导入强制固定位置</string>
        </property>
        <property name="prefEntry" stdset="0">
         <cstring>forceFixedPosition</cstring>
